@@ -1,0 +1,165 @@
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+* {
+    font-family: IRANSansX !important;
+}
+
+.hide-scroll{
+    overflow-y: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.v-hide{
+    visibility: hidden;
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    border-top-right-radius: 0.35rem;
+    border-bottom-right-radius: 0.35rem;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    border-top-left-radius: 0.35rem;
+    border-bottom-left-radius: 0.35rem;
+}
+
+
+.form-control-invalid {
+    border-color: rgb(255, 55, 55) !important;
+}
+
+.btn-text{
+    text-decoration: none;
+    color: #3b3b3b;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.flow-hide{
+    overflow : hidden !important;
+}
+
+.bottom-0 {
+    position: absolute;
+    bottom : 0;
+}
+
+.right-0 {
+    position: absolute;
+    right : 0;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.h-100 {
+    height: 100%;
+}
+.w-100 {
+    width: 100%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+
+.text-caption-1 {
+    font-size: 0.7rem !important
+}
+
+.text-caption-2 {
+    font-size: 0.6rem !important
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.v-list-item__title{
+    font-feature-settings: "ss02";
+}
+
+.bg-main {
+    background-color: rgb(245, 245, 245);
+}
+
+.over-wrap {
+    overflow-wrap: anywhere;
+}
+
+
+/* bg for test */
+.bg {
+    background-color: red;
+    /* display:block !important;
+    text-align: center; */
+}
+
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
+
