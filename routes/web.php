@@ -12,3 +12,4 @@ Route::get('/todo/{todo}', [ TodoController::class , 'show' ] )->name('todos.sho
 Route::put('/todo/{todo}', [ TodoController::class , 'update' ] )->name('todos.update');
 Route::delete('/todo/{todo}', [ TodoController::class , 'destroy' ] )->name('todos.delete');
 Route::get('/todo/{todo}/complated', [ TodoController::class , 'complated' ] )->name('todos.complated');
+Route::get('/todo', [ TodoController::class , 'search' ] )->name('todos.search');

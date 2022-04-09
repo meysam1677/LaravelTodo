@@ -12,9 +12,13 @@ class TodoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $todos = Todo::latest()->paginate(5);
+        if ($request->has('complated'))
+            $todos = Todo::latest()->where('complated', $request->complated)->paginate(5);
+        else
+            $todos = Todo::latest()->paginate(5);
+
         return view('todo.index' , compact('todos'));
     }
 
@@ -116,5 +120,14 @@ class TodoController extends Controller
 
         alert()->success('' , 'انجام شد');
         return redirect()->route('todos.index');
+    }
+
+    public function search(Request $request){
+        $result = Todo::latest()->where('title','like','%'.$request->search.'%')
+        ->orWhere('description','like','%'.$request->search.'%')
+        ->paginate(5);
+
+        // dd($result);
+        return view('todo.search' , compact('result'));
     }
 }
